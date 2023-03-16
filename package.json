@@ -1,0 +1,23 @@
+{
+  "name": "microfrontends-wk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "install-all": "npx concurrently \"npm install start --prefix mf-add-to-wishlist\" \"npm install --force --prefix mf-oauth\" \"npm install --prefix mf-products\" \"npm install --prefix mf-similar-products\" \"npm install --prefix mf-wishlist\"",
+     "start-all": "npx concurrently \"npm run start --prefix mf-add-to-wishlist\" \"npm run start --prefix mf-oauth\" \"npm run start --prefix mf-products\" \"npm run start --prefix mf-similar-products\" \"npm run start --prefix mf-wishlist\"",
+     "install-and-start": "npm run install-all && npm run start-all"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bezael/microfrontends-wk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bezael/microfrontends-wk/issues"
+  },
+  "homepage": "https://github.com/bezael/microfrontends-wk#readme"
+}

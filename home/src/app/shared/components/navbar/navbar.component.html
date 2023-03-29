@@ -1,0 +1,79 @@
+<nav class="bg-gray-800">
+  <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div
+        class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
+      >
+        <div class="flex items-center flex-shrink-0">
+          <img
+            class="block w-auto h-8 lg:hidden"
+            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+            alt="Your Company"
+          />
+          <img
+            class="hidden w-auto h-8 lg:block"
+            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+            alt="Your Company"
+          />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+             [routerLink]="['/home']" routerLinkActive="router-link-active"
+              class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md"
+              aria-current="page"
+              >Home</a
+            >
+
+            <a
+             [routerLink]="['/wishlist']" routerLinkActive="router-link-active"
+              class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+              >WishList</a
+            >
+
+            <a
+             [routerLink]="['/login']" routerLinkActive="router-link-active"
+              class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+              >Login</a
+            >
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a
+       [routerLink]="['/home']" routerLinkActive="router-link-active"
+        class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
+        aria-current="page"
+        >Home</a
+      >
+
+      <a
+       [routerLink]="['/wishlist']" routerLinkActive="router-link-active"
+        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+        >WishList</a
+      >
+
+      <a
+       [routerLink]="['/login']" routerLinkActive="router-link-active"
+        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+        >Login</a
+      >
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="row">
+  <div *ngFor="let item of items" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="box">
+      <mft-wc-wrapper [options]="item"></mft-wc-wrapper>
+    </div>
+  </div>
+</div> -->
